@@ -1,0 +1,127 @@
+1. Update Password in user Profile
+2. Place Order
+
+
+
+
+
+
+Model: 
+
+
+    User Model: 
+
+        userId 
+
+        userName 
+
+        Email 
+
+        password 
+
+        profilePicture 
+
+        createdAt 
+
+        updatedAt 
+
+        role 
+
+        orderIds : [orderId] 
+
+  
+
+  
+
+    Product Model: 
+
+        productId 
+
+        productName 
+
+        description 
+
+        price 
+
+        stock 
+
+        category 
+
+        createdAt 
+
+        updatedAt 
+
+  
+
+    Order Model: 
+
+        orderId 
+
+        userId 
+
+        productIds : [productId] 
+
+        totalAmount 
+
+        orderStatus 
+
+        createdAt 
+
+        updatedAt 
+
+  
+
+  
+
+UI Design: 
+
+    0. Login Page / Registration Page 
+
+    1. Home Page 
+
+    2. Product Listing Page 
+
+    3. Product Detail Page 
+
+    4. Shopping Cart Page 
+
+    5. Place Order Page 
+
+    6. User Profile Page 
+
+    7. Order History Page 
+
+    8. Admin Dashboard 
+
+    9. Page Not Found 
+
+  
+
+API Endpoints: 
+
+    1. User Registration: POST /api/auth/register 
+
+    2. User Login: POST /api/auth/login 
+
+    3. Get All Products: GET /api/products 
+
+    4. Get Product Details: GET /api/products/:productId 
+
+    5. Add Product to Cart: POST /api/cart/add
+        - backend: Handle adding product to user's cart in the database
+
+    6. Remove Product from Cart: POST /api/cart/remove 
+
+    7. Checkout: POST /api/checkout : Changed to api/order/place-order
+
+    8. Get User Profile: GET /api/user/profile 
+
+    9. Update User Profile: PUT /api/user/profile 
+
+    10. Get Order History: GET /api/user/orders 
+
+    11. Admin - Add New Product: POST /api/admin/products 
+
+    12. Admin - Update Product: PUT /api/admin/products/:productId 
+
+    13. Admin - Delete Product: DELETE /api/admin/products/:productId 
