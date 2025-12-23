@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendURL = import.meta.env.VITE_BACKEND_URL || 'https://shopcart-4149.onrender.com';
+const backendURL = import.meta.env.VITE_BACKEND_URL || 'https://shopcart-xsqh.onrender.com';
 // Helper function to get token
 const getAuthToken = () => {
   return localStorage.getItem('token');

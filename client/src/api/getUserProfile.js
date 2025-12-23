@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const backendURL =
-  import.meta.env.VITE_BACKEND_URL || 'https://shopcart-4149.onrender.com';
+  import.meta.env.VITE_BACKEND_URL || 'https://shopcart-xsqh.onrender.com';
 
 // Helper: always get latest token
 const authHeader = () => {

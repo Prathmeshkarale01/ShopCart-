@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const backendURL = import.meta.env.VITE_BACKEND_URL || 'https://shopcart-4149.onrender.com';
+const backendURL = import.meta.env.VITE_BACKEND_URL || 'https://shopcart-xsqh.onrender.com';
 console.log("Backend URL in fetchProduct.js:", backendURL);
 const token = localStorage.getItem('token');
 console.log("Token in cartApi.js:", token);

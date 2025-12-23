@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL:import.meta.env.VITE_BACKEND_URL || 'https://shopcart-4149.onrender.com',
+  baseURL:import.meta.env.VITE_BACKEND_URL || 'https://shopcart-xsqh.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },
